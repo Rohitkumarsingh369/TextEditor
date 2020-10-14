@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Text Editor</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+</head>
+<body>
+	<div class="heading"><h1>text editor</h1></div>
+<div class="buttonbox">
+	<!--bold text-->
+	<div class="tooltip">
+		<button type="button" class=" button" type="Reset" value="Reset" onclick="history.go(0)">reset</button>
+		<script>swal("You have successfully reset!", "You clicked the button!", "success");</script>
+		<span class="tooltiptext">reset</span>
+	</div>
+
+	<!--bold text-->
+	<div class="tooltip">
+		<button type="button" class=" button"  onclick="bold()">bold</button>
+		<span class="tooltiptext">bold text</span>
+	</div>
+
+	<!--italic text-->
+	<div class="tooltip">
+		<button type="button" class=" button"  onclick="italic()">italic</button>
+		<span class="tooltiptext">italic text</span>
+	</div>
+
+	<!--underline text-->
+	<div class="tooltip">
+		<button type="button" class=" button"  onclick="underline()">underline</button>
+		<span class="tooltiptext">underline text</span>
+	</div>
+
+	<!--uppercase text-->
+	<div class="tooltip">
+		<button type="button" class=" button"  onclick="UPPERCASE()">UPPERCASE</button>
+		<span class="tooltiptext">upppercase text</span>
+	</div>
+
+	<!--lowercase text-->
+	<div class="tooltip">
+		<button type="button" class=" button"  onclick="lowercase()">lowercase</button>
+		<span class="tooltiptext">lowercase text</span>
+	</div>
+
+	<!--align-left text-->
+	<div class="tooltip">
+	<button type="button" class="alignbutton" onclick="alignleft()">
+		<i class="fa-2x fas fa-align-left"></i></button>
+		<span class="tooltiptext">align left text</span>
+	</div>
+
+	<!--align-left text-->
+	<div class="tooltip">
+	<button type="button" class="alignbutton" onclick="aligncenter()">
+		<i class="fa-2x fas fa-align-center"></i></button>
+		<span class="tooltiptext">align center text</span>
+	</div>
+
+	<!--align-left text-->
+	<div class="tooltip">
+	<button type="button" class="alignbutton" onclick="alignright()">
+		<i class="fa-2x fas fa-align-right"></i></button>
+		<span class="tooltiptext">align right text</span>
+	</div>
+</div>
+
+	<form id="textbox" name="myforms">
+	<textarea id="originaltext" name="original" onkeyup="OnTextKeyUp(this)" placeholder="Type your text here"></textarea>
+	<textarea id="copytext" placeholder="Your text get automatically here" ></textarea>
+	</form>
+
+	<div class="foot">
+	<a href="https://www.linkedin.com/in/rohitkumarsingh/">Develope by Rohit Kumar Singh</a>
+</div>
+
+<!--script part-->
+<script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>
